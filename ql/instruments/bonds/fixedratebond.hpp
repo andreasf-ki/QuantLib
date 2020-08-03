@@ -58,8 +58,7 @@ namespace QuantLib {
                       const Period& exCouponPeriod = Period(),
                       const Calendar& exCouponCalendar = Calendar(),
                       BusinessDayConvention exCouponConvention = Unadjusted,
-                      bool exCouponEndOfMonth = false,
-                      const DayCounter& firstPeriodDayCounter = DayCounter());
+                      bool exCouponEndOfMonth = false);
         /*! simple annual compounding coupon rates
             with internal schedule calculation */
         FixedRateBond(Natural settlementDays,
@@ -81,8 +80,7 @@ namespace QuantLib {
                       const Period& exCouponPeriod = Period(),
                       const Calendar& exCouponCalendar = Calendar(),
                       BusinessDayConvention exCouponConvention = Unadjusted,
-                      bool exCouponEndOfMonth = false,
-                      const DayCounter& firstPeriodDayCounter = DayCounter());
+                      bool exCouponEndOfMonth = false);
         //! generic compounding and frequency InterestRate coupons
         FixedRateBond(Natural settlementDays,
                       Real faceAmount,
@@ -97,12 +95,10 @@ namespace QuantLib {
                       BusinessDayConvention exCouponConvention = Unadjusted,
                       bool exCouponEndOfMonth = false);
         Frequency frequency() const { return frequency_; }
-        const DayCounter& dayCounter() const {return dayCounter_;}
-        const DayCounter& firstPeriodDayCounter() const {return firstPeriodDayCounter_;}
+        const DayCounter& dayCounter() const { return dayCounter_; }
       protected:
         Frequency frequency_;
         DayCounter dayCounter_;
-        DayCounter firstPeriodDayCounter_;
     };
 
 }
