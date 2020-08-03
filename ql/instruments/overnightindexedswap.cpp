@@ -27,28 +27,25 @@
 namespace QuantLib {
 
     OvernightIndexedSwap::OvernightIndexedSwap(
-                    Type type,
-                    Real nominal,
-                    const Schedule& schedule,
-                    Rate fixedRate,
-                    const DayCounter& fixedDC,
-                    const ext::shared_ptr<OvernightIndex>& overnightIndex,
-                    Spread spread,
-                    Natural paymentLag,
-                    BusinessDayConvention paymentAdjustment,
-                    const Calendar& paymentCalendar,
-                    bool telescopicValueDates)
-    : Swap(2), type_(type),
-      nominals_(std::vector<Real>(1, nominal)),
-	  schedule_(schedule),
+        Type type,
+        Real nominal,
+        const Schedule& schedule,
+        Rate fixedRate,
+        const DayCounter& fixedDC,
+        const ext::shared_ptr<OvernightIndex>& overnightIndex,
+        Spread spread,
+        Natural paymentLag,
+        BusinessDayConvention paymentAdjustment,
+        const Calendar& paymentCalendar,
+        bool telescopicValueDates)
+    : Swap(2), type_(type), nominals_(std::vector<Real>(1, nominal)),
       paymentFrequency_(schedule.tenor().frequency()),
       paymentCalendar_(paymentCalendar.empty() ? schedule.calendar() : paymentCalendar),
       paymentAdjustment_(paymentAdjustment), paymentLag_(paymentLag), fixedRate_(fixedRate),
       fixedDC_(fixedDC), overnightIndex_(overnightIndex), spread_(spread),
       telescopicValueDates_(telescopicValueDates) {
 
-          initialize(schedule_);
-
+        initialize(schedule);
     }
 
     OvernightIndexedSwap::OvernightIndexedSwap(
@@ -67,9 +64,9 @@ namespace QuantLib {
       paymentCalendar_(paymentCalendar.empty() ? schedule.calendar() : paymentCalendar),
       paymentAdjustment_(paymentAdjustment), paymentLag_(paymentLag), fixedRate_(fixedRate),
       fixedDC_(fixedDC), overnightIndex_(overnightIndex), spread_(spread),
-      telescopicValueDates_(telescopicValueDates), schedule_(schedule) {
+      telescopicValueDates_(telescopicValueDates) {
 
-        initialize(schedule_);
+        initialize(schedule);
     }
 
     void OvernightIndexedSwap::initialize(const Schedule& schedule) {
