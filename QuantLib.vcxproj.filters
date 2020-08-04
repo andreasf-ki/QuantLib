@@ -337,6 +337,24 @@
     <Filter Include="methods\finitedifferences\utilities">
       <UniqueIdentifier>{be723df5-2e58-41de-8071-8d2e2f62410a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ext">
+      <UniqueIdentifier>{5dca9cc8-0a13-44a9-8d7d-2088afc21d1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\cashflows">
+      <UniqueIdentifier>{f63d9e97-1b2b-49ae-8224-fddf94453ea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\indexes">
+      <UniqueIdentifier>{21d490fa-1711-4d7c-adb7-c29710723427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\instruments">
+      <UniqueIdentifier>{6f42253d-c63a-4ecb-a12e-e06e6795b2ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\pricingengines">
+      <UniqueIdentifier>{a8fd217a-4396-4318-8064-cc882e4d59ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\termstructures">
+      <UniqueIdentifier>{7e4965ab-1cac-417a-aeb1-5aece78e4ebf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ql\methods\all.hpp">
@@ -4324,6 +4342,123 @@
     <ClInclude Include="ql\pricingengines\vanilla\exponentialfittinghestonengine.hpp">
       <Filter>pricingengines\vanilla</Filter>
     </ClInclude>
+    <ClInclude Include="ql\ext\all.hpp">
+      <Filter>ext</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\cashflows\all.hpp">
+      <Filter>ext\cashflows</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\cashflows\averageonindexedcoupon.hpp">
+      <Filter>ext\cashflows</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\cashflows\averageonindexedcouponpricer.hpp">
+      <Filter>ext\cashflows</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\cashflows\couponpricer_ext.hpp">
+      <Filter>ext\cashflows</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\cashflows\floatingratefxlinkednotionalcoupon.hpp">
+      <Filter>ext\cashflows</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\cashflows\fxlinkedcashflow.hpp">
+      <Filter>ext\cashflows</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\cashflows\subperiodscoupon.hpp">
+      <Filter>ext\cashflows</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\cashflows\subperiodscouponpricer.hpp">
+      <Filter>ext\cashflows</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\indexes\all.hpp">
+      <Filter>ext\indexes</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\indexes\fxindex.hpp">
+      <Filter>ext\indexes</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\instruments\all.hpp">
+      <Filter>ext\instruments</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\instruments\averageois.hpp">
+      <Filter>ext\instruments</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\instruments\crossccybasismtmresetswap.hpp">
+      <Filter>ext\instruments</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\instruments\crossccybasisswap.hpp">
+      <Filter>ext\instruments</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\instruments\crossccyswap.hpp">
+      <Filter>ext\instruments</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\instruments\currencyswap.hpp">
+      <Filter>ext\instruments</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\instruments\fxforward.hpp">
+      <Filter>ext\instruments</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\instruments\makeaverageois.hpp">
+      <Filter>ext\instruments</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\instruments\oibasisswap.hpp">
+      <Filter>ext\instruments</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\instruments\oiccbasisswap.hpp">
+      <Filter>ext\instruments</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\instruments\subperiodsswap.hpp">
+      <Filter>ext\instruments</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\instruments\tenorbasisswap.hpp">
+      <Filter>ext\instruments</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\pricingengines\all.hpp">
+      <Filter>ext\pricingengines</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\pricingengines\crossccyswapengine.hpp">
+      <Filter>ext\pricingengines</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\pricingengines\discountingcurrencyswapengine.hpp">
+      <Filter>ext\pricingengines</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\pricingengines\discountingfxforwardengine.hpp">
+      <Filter>ext\pricingengines</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\pricingengines\discountingswapenginemulticurve.hpp">
+      <Filter>ext\pricingengines</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\pricingengines\oiccbasisswapengine.hpp">
+      <Filter>ext\pricingengines</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\termstructures\all.hpp">
+      <Filter>ext\termstructures</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\termstructures\averageoisratehelper.hpp">
+      <Filter>ext\termstructures</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\termstructures\basistwoswaphelper.hpp">
+      <Filter>ext\termstructures</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\termstructures\crossccybasismtmresetswaphelper.hpp">
+      <Filter>ext\termstructures</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\termstructures\crossccybasisswaphelper.hpp">
+      <Filter>ext\termstructures</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\termstructures\oibasisswaphelper.hpp">
+      <Filter>ext\termstructures</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\termstructures\oiccbasisswaphelper.hpp">
+      <Filter>ext\termstructures</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\termstructures\resetablecrosscurrencyswaphelper.hpp">
+      <Filter>ext\termstructures</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\termstructures\subperiodsswaphelper.hpp">
+      <Filter>ext\termstructures</Filter>
+    </ClInclude>
+    <ClInclude Include="ql\ext\termstructures\tenorbasisswaphelper.hpp">
+      <Filter>ext\termstructures</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ql\methods\montecarlo\brownianbridge.cpp">
@@ -6983,6 +7118,102 @@
     </ClCompile>
     <ClCompile Include="ql\pricingengines\vanilla\exponentialfittinghestonengine.cpp">
       <Filter>pricingengines\vanilla</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\cashflows\averageonindexedcoupon.cpp">
+      <Filter>ext\cashflows</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\cashflows\averageonindexedcouponpricer.cpp">
+      <Filter>ext\cashflows</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\cashflows\couponpricer_ext.cpp">
+      <Filter>ext\cashflows</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\cashflows\fxlinkedcashflow.cpp">
+      <Filter>ext\cashflows</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\cashflows\subperiodscoupon.cpp">
+      <Filter>ext\cashflows</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\cashflows\subperiodscouponpricer.cpp">
+      <Filter>ext\cashflows</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\indexes\fxindex.cpp">
+      <Filter>ext\indexes</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\instruments\averageois.cpp">
+      <Filter>ext\instruments</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\instruments\crossccybasismtmresetswap.cpp">
+      <Filter>ext\instruments</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\instruments\crossccybasisswap.cpp">
+      <Filter>ext\instruments</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\instruments\crossccyswap.cpp">
+      <Filter>ext\instruments</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\instruments\currencyswap.cpp">
+      <Filter>ext\instruments</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\instruments\fxforward.cpp">
+      <Filter>ext\instruments</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\instruments\makeaverageois.cpp">
+      <Filter>ext\instruments</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\instruments\oibasisswap.cpp">
+      <Filter>ext\instruments</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\instruments\oiccbasisswap.cpp">
+      <Filter>ext\instruments</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\instruments\subperiodsswap.cpp">
+      <Filter>ext\instruments</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\instruments\tenorbasisswap.cpp">
+      <Filter>ext\instruments</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\pricingengines\crossccyswapengine.cpp">
+      <Filter>ext\pricingengines</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\pricingengines\discountingcurrencyswapengine.cpp">
+      <Filter>ext\pricingengines</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\pricingengines\discountingfxforwardengine.cpp">
+      <Filter>ext\pricingengines</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\pricingengines\discountingswapenginemulticurve.cpp">
+      <Filter>ext\pricingengines</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\pricingengines\oiccbasisswapengine.cpp">
+      <Filter>ext\pricingengines</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\termstructures\averageoisratehelper.cpp">
+      <Filter>ext\termstructures</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\termstructures\basistwoswaphelper.cpp">
+      <Filter>ext\termstructures</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\termstructures\crossccybasismtmresetswaphelper.cpp">
+      <Filter>ext\termstructures</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\termstructures\crossccybasisswaphelper.cpp">
+      <Filter>ext\termstructures</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\termstructures\oibasisswaphelper.cpp">
+      <Filter>ext\termstructures</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\termstructures\oiccbasisswaphelper.cpp">
+      <Filter>ext\termstructures</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\termstructures\resetablecrosscurrencyswaphelper.cpp">
+      <Filter>ext\termstructures</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\termstructures\subperiodsswaphelper.cpp">
+      <Filter>ext\termstructures</Filter>
+    </ClCompile>
+    <ClCompile Include="ql\ext\termstructures\tenorbasisswaphelper.cpp">
+      <Filter>ext\termstructures</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
