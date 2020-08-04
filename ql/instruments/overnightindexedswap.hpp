@@ -31,6 +31,7 @@
 #include <ql/time/daycounter.hpp>
 #include <ql/time/businessdayconvention.hpp>
 #include <ql/time/calendar.hpp>
+#include <ql/time/schedule.hpp>
 
 namespace QuantLib {
 
@@ -71,8 +72,9 @@ namespace QuantLib {
         Real nominal() const;
         std::vector<Real> nominals() const { return nominals_; }
 
-        //const Schedule& schedule() { return schedule_; }
+        const Schedule& schedule() { return schedule_; }
         Frequency paymentFrequency() { return paymentFrequency_; }
+		Natural paymentLag() { return paymentLag_; }
 
         Rate fixedRate() const { return fixedRate_; }
         const DayCounter& fixedDayCount() { return fixedDC_; }
@@ -104,7 +106,7 @@ namespace QuantLib {
         BusinessDayConvention paymentAdjustment_;
         Natural paymentLag_;
 
-        //Schedule schedule_;
+        Schedule schedule_;
 
         Rate fixedRate_;
         DayCounter fixedDC_;
